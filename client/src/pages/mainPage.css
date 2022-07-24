@@ -1,0 +1,136 @@
+.intro{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    color: white;
+    padding: 80px;
+}
+.intro__text{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.intro__text>h1{
+    font-size: 60px;
+    text-shadow: -3px 5px 1px #c23939;
+    padding: 10px;
+}
+.intro__text>h3{
+    color: #dadada;
+    font-size: 20px;
+}
+
+.intro__images{
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.intro__text>button{
+    margin-top: 10px;
+    background-color: #ea1e1e;
+    width: 300px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: -8px 7px 1px white;
+    max-width: 100%;
+}
+button:hover{
+    filter: brightness(0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.blackBackground{
+    background-color: #000000;
+    width: 100%;
+}
+
+.whiteBackground{
+    background-color: #ffffff;
+    width: 100%;
+}
+
+
+
+.cases>h3{
+    font-size: 40px;
+}
+
+.cases{
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    padding-top: 40px;
+}
+
+.case:nth-child(even){
+    flex-direction: row-reverse;
+}
+.skills{
+    margin: auto;
+    width: 100%;
+}
+
+.case{
+    justify-content: space-between;
+    display: flex;
+    height: 300px;
+    margin: 40px auto 0;
+    width: 80%;
+}
+.case__workInfo{
+    padding: 40px;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+}
+.case__img{
+    border-radius: 20px ;
+    width: 300px;
+}
+
+.myImage:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease-in;
+}
+
+.myImage{
+    z-index: 1;
+    transition: all 0.4s ease-in;
+}
+@media screen and (max-width: 1100px) {
+    .intro{
+        flex-direction: column;
+        width: 100%;
+    }
+    .intro__text{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .intro__images{
+        justify-content: center;
+    }
+    .intro__text>h1{
+        font-size: 40px;
+    }
+    .myImage{
+        width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+.header{
+    font-size: 20px;
+    color: #e1e1e1;
+    display: flex;
+    background-color: #2a2828;
+    width: 100vw;
+    justify-content: center;
+    padding: 40px;
+}
+
+ol{
+    width: 80vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
