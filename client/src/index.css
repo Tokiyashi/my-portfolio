@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+
 }
 
 main{
@@ -14,5 +15,9 @@ main{
   display: flex;
   align-items: center;
   min-height: 100vh;
+  scroll-snap-type: y proximity;
 }
 
+canvas>img{
+  border-radius: 50%;
+}

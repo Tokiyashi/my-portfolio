@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import aaa from './IM2G_2484.jpg'
 import './mainPage.css'
-import reactIcon from './React-icon.svg.png'
+import reactIcon from '../components/Physics/React-icon.png'
 import htmlIcon from './919827.png'
 import Header from "../components/Header";
-
+import Physics from "../components/Physics/Physics";
 const MainPage = () => {
 
     const [showIcons, setShowIcons] = useState(false);
@@ -50,35 +50,8 @@ const MainPage = () => {
                 </div>
             </div>
             <div className="whiteBackground">
-            <div className="skills">
-                <h3> My skills: </h3>
-
-               {/* <Engine options={{}}>
-                    <RenderClones
-                        style={{margin: "auto"}}
-                        enableMouse
-                        options={{
-                            width: 1200,
-                            height: 400,
-                            background: "transparent",
-                            wireframeBackground: "transparent"
-                        }}
-                    >
-                        <Walls x={0} y={0} width={4000} height={400} wallWidth={25} />
-                        <Circle
-                            clone
-                            x={500}
-                            y={100}
-                            radius={80}
-
-                        />
-                        <Constraint>
-                            <Circle clone x={100} y={100} radius={50} />
-                            <Rectangle clone x={300} y={100} width={100} height={100} />
-                        </Constraint>
-                    </RenderClones>
-                </Engine>*/}
-            </div>
+                <h1 id="skills"> My skills </h1>
+                <Physics/>
             </div>
 
             <div className="whiteBackground">

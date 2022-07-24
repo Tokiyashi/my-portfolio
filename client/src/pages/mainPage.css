@@ -6,6 +6,7 @@
     width: 80%;
     color: white;
     padding: 80px;
+    height: 100vh;
 }
 .intro__text{
     width: 80%;
@@ -54,11 +55,20 @@ button:hover{
 }
 
 .whiteBackground{
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
     background-color: #ffffff;
     width: 100%;
 }
 
-
+#skills{
+    font-size: 50px;
+    text-shadow: 4px 2px 1px #e7caca;
+    z-index: 0;
+    transform: translateY(50vh);
+}
 
 .cases>h3{
     font-size: 40px;
