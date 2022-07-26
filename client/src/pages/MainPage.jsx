@@ -9,7 +9,6 @@ const MainPage = () => {
 
     const [showIcons, setShowIcons] = useState(false);
     const handleShowIcons = () => {
-
     }
 
     const skills = useRef(null);
@@ -34,12 +33,13 @@ const MainPage = () => {
                             <h3>
                                 Frontend-developer, student, creative person
                             </h3>
-                            <button>
+                            <button onClick={()=> feedback.current.scrollIntoView()}>
                                 Hire me!
                             </button>
                         </div>
                         <div className="intro__images">
                             <img
+                                alt="intro"
                                 onMouseEnter={()=> setShowIcons(true)}
                                 className="myImage"
                                 style={{borderRadius: "50%"}}
@@ -62,12 +62,42 @@ const MainPage = () => {
                     </div>
                 </div>
             <div ref={about} className="whiteBackground">
-
+                //react transition on init section
+                //add floating html and coding symbols: [text], //text
             </div>
                 <div ref={skills} className="blackBackground" >
-                    //сделать чтобы шарики падали на текст с навыками
                     <Physics />
-                    <h1  id="skills"> My skills </h1>
+                    <h1  id="skills"> My skills: </h1>
+                    <div className="skills-list">
+                        <div className="skills-column">
+                            <h2>
+                                -JavaScript
+                            </h2>
+                            <h2>
+                                -React
+                            </h2>
+                            <h2>
+                                -Redux
+                            </h2>
+                            <h2>
+                                -HTML, CSS
+                            </h2>
+                        </div>
+                        <div className="skills-column">
+                            <h2>
+                                -TypeScript
+                            </h2>
+                            <h2>
+                                -Tailwind, Bootstrap
+                            </h2>
+                            <h2>
+                                -English (B2)
+                            </h2>
+                            <h2>
+                                -GitHub
+                            </h2>
+                        </div>
+                    </div>
                 </div>
 
                 <div ref={cases} className="whiteBackground">
@@ -84,16 +114,6 @@ const MainPage = () => {
                             />
                         </div>
 
-                        <div className="case">
-                            <div className="case__workInfo">
-                                <h4> pososal </h4>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolor eveniet fugit iste, iure natus nemo repellat. Animi dolore error exercitationem fugit minus nemo quasi repellat sint vero, voluptas! Perspiciatis. </p>
-                            </div>
-                            <img
-                                className="case__img"
-                                src={aaa}
-                            />
-                        </div>
                         <div className="case">
                             <div className="case__workInfo">
                                 <h4> pososal </h4>
