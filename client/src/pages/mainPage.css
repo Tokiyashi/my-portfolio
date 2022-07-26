@@ -50,24 +50,37 @@ button:hover{
 
 
 .blackBackground{
+    height: 100vh;
+    align-items: center;
     background-color: #000000;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+.wrapper{
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .whiteBackground{
     align-items: center;
+    height: 100vh;
     padding: 20px;
     flex-direction: column;
     display: flex;
     background-color: #ffffff;
     width: 100%;
+    scroll-snap-align: start;
 }
 
 #skills{
     font-size: 50px;
-    text-shadow: 4px 2px 1px #e7caca;
+    text-shadow: -4px 2px 1px #d22a2a;
     z-index: 0;
-    transform: translateY(50vh);
+    color: #ffffff;
 }
 
 .cases>h3{
@@ -99,6 +112,8 @@ button:hover{
     margin: 40px auto 0;
     width: 80%;
 }
+
+
 .case__workInfo{
     padding: 40px;
     text-align: left;

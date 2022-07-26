@@ -9,8 +9,8 @@ function Comp (props) {
     let objectsOnCanvas = 0;
 
     useEffect(() => {
-        const cw = document.body.clientWidth*0.9
-        const ch = document.body.clientHeight/3
+        const cw = document.body.clientWidth
+        const ch = document.body.clientHeight*0.5
 
 
 
@@ -81,8 +81,8 @@ function Comp (props) {
                 friction: 0.005,
                 render: {
                     sprite:{
-                        xScale: 0.25,
-                        yScale: 0.25,
+                        xScale: 0.235,
+                        yScale: 0.235,
                         texture: links[1],
                     }
                 }
@@ -94,8 +94,9 @@ function Comp (props) {
     const handleAddCircle = e => {
         //make a counter where player can't make more objects than fixed number
         //make some icons lay on canvas after site initialization
+        //count of max balls per screen calculates from size of user's screen
        const objectNumber = Math.floor(Math.random()*physicObjects.length)
-        if (isPressed.current && objectsOnCanvas<250) {
+        if (isPressed.current && objectsOnCanvas<230) {
             const ball = Bodies.circle(
                 e.clientX,
                 e.clientY,
