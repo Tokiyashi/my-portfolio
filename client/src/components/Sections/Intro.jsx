@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import aaa from "../../pages/IM2G_2484.jpg";
+import aaa from "./img/IM2G_2484.jpg";
 
 const Intro = ({reference}) => {
 

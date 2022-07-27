@@ -1,5 +1,5 @@
 import React from 'react';
-import aaa from "../../pages/IM2G_2484.jpg";
+import aaa from "./img/IM2G_2484.jpg";
 
 const Cases = ({reference}) => {
     return (

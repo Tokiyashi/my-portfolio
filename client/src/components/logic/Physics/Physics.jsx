@@ -228,6 +228,7 @@ function Comp (props) {
         <div
             //onMouseDown={handleDown}
             onMouseUp={handleUp}
+            onTouchStart={handleAddCircle}
             onMouseDown={handleAddCircle}
         >
             <div ref={scene} style={{ width: '100%', height: '100%' }} />

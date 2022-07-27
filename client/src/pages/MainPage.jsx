@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import './mainPage.css'
-import Header from "../components/Header";
+import Header from "../components/UI/Header";
 import Intro from "../components/Sections/Intro";
 import About from "../components/Sections/About";
 import Skills from "../components/Sections/Skills";

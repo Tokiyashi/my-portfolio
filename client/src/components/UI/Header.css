@@ -15,6 +15,13 @@
     position: absolute;
 }
 
+.cross{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background-color: black;
+}
+
 ol{
     padding-left: 20px;
     padding-right: 20px;
@@ -27,7 +34,12 @@ ol{
 
 .hidden{
     width: 0;
-    transition: all 0.5s;
+    transition: width 1s ease;
+}
+
+.visible{
+    width: 120px;
+    transition: width 1s ease;
 }
 
 .selected{
