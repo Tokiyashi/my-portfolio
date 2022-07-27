@@ -1,4 +1,5 @@
 .header{
+    z-index: 5;
     left: 0;
     font-size: 20px;
     color: #e1e1e1;
@@ -7,7 +8,11 @@
     background-color: #2a2828;
     justify-content: center;
     position: absolute;
-    float: left;
+}
+
+.burger{
+    left: 0;
+    position: absolute;
 }
 
 ol{
@@ -20,6 +25,11 @@ ol{
     display: flex;
 }
 
+.hidden{
+    width: 0;
+    transition: all 0.5s;
+}
+
 .selected{
     filter: brightness(0.6);
 }
@@ -30,7 +40,15 @@ li:hover{
     transition: all 0.3s;
 }
 
+
+
 li{
     cursor: pointer;
     list-style-type: none;
+}
+
+@media screen and (min-width: 1100px) {
+    .burger{
+        display: none;
+    }
 }

@@ -3,44 +3,60 @@ import './Header.css'
 
 const Header = ({references}) => {
 
-    const [selectedSection, setSelectedSection] = useState("home")
+    const [selectedSection, setSelectedSection] = useState("home");
+    const [isVisible, setIsVisible] = useState(true)
+
     return (
+        <>
+        <div className="burger">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/2048px-Hamburger_icon_white.svg.png"
+                 alt="burger"
+                 width="40px"
+                 onClick={()=> setIsVisible(true)}/>
+        </div>
         <div className="header">
-           <nav>
+           <nav className={isVisible?"visible":"hidden"}>
+               <div className="burger">
+                   <img onClick={()=> setIsVisible(false)}
+                        width="40px"
+                        src="https://visitnyack.org/wp-content/themes/visit-nyack/assets/images/close.svg"
+                   />
+               </div>
                <ol>
                    <li className={(selectedSection==="home")?"selected": ""} onClick={()=> {
                        references.home.current.scrollIntoView();
-                       setSelectedSection("home")
+                       setSelectedSection("home");
                    }}>
                        Home
                    </li>
                    <li className={(selectedSection==="about")?"selected": ""} onClick={()=> {
                        references.about.current.scrollIntoView();
-                       setSelectedSection("about")
+                       setSelectedSection("about");
                    }} >
                        About
                    </li>
                    <li className={(selectedSection==="skills")?"selected": ""} onClick={()=> {
                        references.skills.current.scrollIntoView();
-                       setSelectedSection("skills")
+                       setSelectedSection("skills");
                    }} >
                        Skills
                    </li>
                    <li className={(selectedSection==="cases")?"selected": ""} onClick={()=> {
                        references.cases.current.scrollIntoView();
-                       setSelectedSection("cases")
+                       setSelectedSection("cases");
                    }} >
                         Case Studies
                    </li>
-                   <li className={(selectedSection==="feedback")?"selected": ""} onClick={()=> {
-                       references.feedback.current.scrollIntoView();
+                   <li className={(selectedSection==="contact")?"selected": ""} onClick={()=> {
+                       references.contact.current.scrollIntoView();
                        setSelectedSection("feedback")
                    }}>
-                       Feedback
+                       Contact
                    </li>
                </ol>
            </nav>
         </div>
+        </>
     );
 };
 
