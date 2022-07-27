@@ -17,16 +17,19 @@
     padding: 20px;
 }
 .intro__text>h1{
+    overflow: visible;
     font-size: 60px;
     text-shadow: -3px 5px 1px #c23939;
     padding: 10px;
 }
 .intro__text>h3{
+    overflow: visible;
     color: #dadada;
     font-size: 20px;
 }
 
 .intro__images{
+    overflow: hidden;
     align-items: center;
     display: flex;
     padding: 20px;
@@ -161,6 +164,9 @@ button:hover{
     }
     .intro__text{
         width: 100%;
+    }
+    .skills-column>h2{
+       font-size: 20px;
     }
 }
 
