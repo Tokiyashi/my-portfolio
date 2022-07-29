@@ -126,8 +126,9 @@ button:hover{
 }
 
 .case{
+
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     justify-content: space-between;
     height: 300px;
     margin: 40px auto 0;
