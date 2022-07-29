@@ -126,13 +126,13 @@ button:hover{
 }
 
 .case{
-    justify-content: space-between;
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
     height: 300px;
     margin: 40px auto 0;
     width: 80%;
 }
-
 
 .case__workInfo{
     padding: 40px;
@@ -168,6 +168,7 @@ button:hover{
 }
 
 .contact{
+    padding: 30px;
     display: flex;
     flex-direction: column;
     height: 70%;
@@ -200,16 +201,69 @@ button:hover{
     .skills-column>h2{
        font-size: 20px;
     }
+    #weather-app{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 650px){
+    .physic-icons, #hint{
+        display: none;
+    }
     .intro__images{
         justify-content: center;
+    }
+    .about__paragraphs{
+        font-size: 20px;
     }
     .intro__text>h1{
         font-size: 40px;
     }
     .myImage{
         width: 100%;
+    }
+    .skills-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-column{
+        width: 80%;
+        margin: auto;
+    }
+
+    .case__workInfo{
+        font-size: 20px;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    .cases>h3{
+        font-size: 30px;
+    }
+    .case:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .case{
+        padding: 30px;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .case>img{
+        width: 70%
+    }
+
+    .cases{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
     }
 }

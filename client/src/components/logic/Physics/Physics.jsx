@@ -231,7 +231,7 @@ function Comp (props) {
             onTouchStart={handleAddCircle}
             onMouseDown={handleAddCircle}
         >
-            <div ref={scene} style={{ width: '100%', height: '100%' }} />
+            <div ref={scene} className="physic-icons" style={{ width: '100%', height: '100%' }} />
         </div>
     )
 }

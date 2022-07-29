@@ -1,4 +1,5 @@
 import React from 'react';
+import me from './img/IM2G_2484.jpg'
 
 const Cases = ({reference}) => {
     return (
@@ -11,11 +12,12 @@ const Cases = ({reference}) => {
                         <p> In this app you can see all popular crypto-coins. You can sort them and search anything you want. This project uses CoinGecko API.  </p>
                     </div>
                     <img
+                        src={me}
                         className="case__img"
                     />
                 </div>
 
-                <div className="case">
+                <div id="weather-app" className="case">
                     <div className="case__workInfo">
                         <h4> Weather App </h4>
                         <p> Very simple site that shows some information about weather in selected city. Also you will find a forecast for the next days. </p>

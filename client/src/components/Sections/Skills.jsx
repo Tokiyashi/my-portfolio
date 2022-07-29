@@ -5,7 +5,7 @@ const Skills = ({reference}) => {
     return (
         <div ref={reference} className="blackBackground" >
             <Physics />
-            <h2> (Click anywhere inside the box) </h2>
+            <h2 id="hint"> (Click anywhere inside the box) </h2>
             <h1  id="skills"> My skills: </h1>
             <div className="skills-list">
                 <div className="skills-column">
