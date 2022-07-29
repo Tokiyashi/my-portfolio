@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import aaa from "./img/IM2G_2484.jpg";
 
-const Intro = ({reference}) => {
+const Intro = ({reference, hireMe}) => {
 
     return (
             <div ref={reference} className="blackBackground">
@@ -11,7 +11,7 @@ const Intro = ({reference}) => {
                         <h3>
                             Frontend-developer, student, creative person
                         </h3>
-                        <button>
+                        <button onClick={()=> hireMe()}>
                             Hire me!
                         </button>
                     </div>

@@ -34,12 +34,12 @@ ol{
 
 .hidden{
     width: 0;
-    transition: width 1s ease;
+    transition: width 0.7s ease;
 }
 
 .visible{
     width: 120px;
-    transition: width 1s ease;
+    transition: width 0.7s ease;
 }
 
 .selected{

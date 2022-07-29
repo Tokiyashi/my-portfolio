@@ -16,10 +16,14 @@ const MainPage = () => {
     const contact  = useRef(null);
     const home  = useRef(null);
 
+    const hireMe = () => {
+        contact.current.scrollIntoView();
+    }
+
     return (
         <main>
             <Header references={{home: home, about: about, cases: cases, contact: contact, skills: skills}}/>
-            <Intro reference={home} />
+            <Intro hireMe={hireMe} reference={home} />
             <About reference={about}/>
             <Skills reference={skills}/>
             <Cases reference={cases}/>

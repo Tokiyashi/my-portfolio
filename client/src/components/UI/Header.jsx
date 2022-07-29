@@ -23,31 +23,31 @@ const Header = ({references}) => {
                    />
                </div>
                <ol>
-                   <li className={(selectedSection==="home")?"selected": ""} onClick={()=> {
+                   <li  onClick={()=> {
                        references.home.current.scrollIntoView();
                        setSelectedSection("home");
                    }}>
                        Home
                    </li>
-                   <li className={(selectedSection==="about")?"selected": ""} onClick={()=> {
+                   <li onClick={()=> {
                        references.about.current.scrollIntoView();
                        setSelectedSection("about");
                    }} >
                        About
                    </li>
-                   <li className={(selectedSection==="skills")?"selected": ""} onClick={()=> {
+                   <li  onClick={()=> {
                        references.skills.current.scrollIntoView();
                        setSelectedSection("skills");
                    }} >
                        Skills
                    </li>
-                   <li className={(selectedSection==="cases")?"selected": ""} onClick={()=> {
+                   <li onClick={()=> {
                        references.cases.current.scrollIntoView();
                        setSelectedSection("cases");
                    }} >
                         Case Studies
                    </li>
-                   <li className={(selectedSection==="contact")?"selected": ""} onClick={()=> {
+                   <li  onClick={()=> {
                        references.contact.current.scrollIntoView();
                        setSelectedSection("feedback")
                    }}>

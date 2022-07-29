@@ -5,7 +5,7 @@ const Skills = ({reference}) => {
     return (
         <div ref={reference} className="blackBackground" >
             <Physics />
-            <h2> (Click anywhere inside box) </h2>
+            <h2> (Click anywhere inside the box) </h2>
             <h1  id="skills"> My skills: </h1>
             <div className="skills-list">
                 <div className="skills-column">
@@ -18,30 +18,29 @@ const Skills = ({reference}) => {
                     <h2>
                         -Redux
                     </h2>
+
+                </div>
+                <div className="skills-column">
                     <h2>
                         -HTML, CSS
                     </h2>
-                </div>
-                <div className="skills-column">
                     <h2>
                         -TypeScript
                     </h2>
                     <h2>
                         -Tailwind, Bootstrap
                     </h2>
+
+                </div>
+                <div className="skills-column">
                     <h2>
-                        -English (B2)
+                        -SASS
                     </h2>
                     <h2>
                         -GitHub
                     </h2>
-                </div>
-                <div className="skills-column">
                     <h2>
-                        -REST API
-                    </h2>
-                    <h2>
-                        -SASS
+                        -English (B2)
                     </h2>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import aaa from "./img/IM2G_2484.jpg";
 
 const Cases = ({reference}) => {
     return (
@@ -8,23 +7,21 @@ const Cases = ({reference}) => {
                 <h3> Case Studies: </h3>
                 <div className="case">
                     <div className="case__workInfo">
-                        <h4> pososal </h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolor eveniet fugit iste, iure natus nemo repellat. Animi dolore error exercitationem fugit minus nemo quasi repellat sint vero, voluptas! Perspiciatis. </p>
+                        <h4> Cryptocurrency App </h4>
+                        <p> In this app you can see all popular crypto-coins. You can sort them and search anything you want. This project uses CoinGecko API.  </p>
                     </div>
                     <img
                         className="case__img"
-                        src={aaa}
                     />
                 </div>
 
                 <div className="case">
                     <div className="case__workInfo">
-                        <h4> pososal </h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolor eveniet fugit iste, iure natus nemo repellat. Animi dolore error exercitationem fugit minus nemo quasi repellat sint vero, voluptas! Perspiciatis. </p>
+                        <h4> Weather App </h4>
+                        <p> Very simple site that shows some information about weather in selected city. Also you will find a forecast for the next days. </p>
                     </div>
                     <img
                         className="case__img"
-                        src={aaa}
                     />
                 </div>
             </div>

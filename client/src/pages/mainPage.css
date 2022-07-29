@@ -61,6 +61,7 @@ button:hover{
     flex-direction: column;
     scroll-snap-align: start;
     color: #ffffff;
+    justify-content: center;
 }
 .wrapper{
     scroll-snap-type: y mandatory;
@@ -151,6 +152,37 @@ button:hover{
 .myImage:hover{
     transform: scale(1.05);
     transition: all 0.4s ease-in;
+}
+.about{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70%;
+}
+.about__paragraphs{
+    height: 70%;
+    font-size: 30px;
+  /*  text-indent:70px*/
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact__socials__icons{
+
 }
 
 .myImage{
